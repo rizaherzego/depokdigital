@@ -9,6 +9,8 @@ exports.handler = async (event, context) => {
   // When the method is POST, the name will no longer be in the event’s
   // queryStringParameters – it’ll be in the event body encoded as a query string
 
+  console.log('asdasda' + event.httpMethod);
+  
   return {
     statusCode: 200,
     body: {
