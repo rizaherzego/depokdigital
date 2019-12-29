@@ -1,6 +1,7 @@
 
 exports.handler = async (event, context) => {
   // Only allow POST
+  console.log('helloo ');
   if (event.httpMethod !== "POST") {
     return { statusCode: 405, body: "Method Not Allowed" };
   }
