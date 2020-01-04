@@ -22052,6 +22052,26 @@
   border-color: transparent;
 }
 
+.subscription-form .form-group #mce-responses{
+  color:#fff;
+  margin-bottom: 10px;
+  margin-top: 10px;  
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  .subscription-form .form-group #mce-responses{
+    max-width: 275px;
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: 992px) {
+  .subscription-form .form-group #mce-responses {
+    margin-right: 10px;
+  }
+}
+
 @media (min-width: 576px) {
   .subscription-form .form-group input {
     max-width: 275px;
