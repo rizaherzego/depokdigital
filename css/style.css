@@ -22027,12 +22027,28 @@
 }
 
 .subscription-form .form-group input {
+  margin-bottom: 10px;
+  margin-top: 10px;
   height: 60px;
   width: 100%;
   color: #666666;
   border-radius: 5px;
   background-color: #ffffff;
-  padding-left: 17px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-color: transparent;
+}
+
+.subscription-form .form-group select {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  height: 60px;
+  width: 100%;
+  color: #666666;
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding-left: 20px;
+  padding-right: 20px;
   border-color: transparent;
 }
 
@@ -22045,6 +22061,19 @@
 
 @media (min-width: 992px) {
   .subscription-form .form-group input {
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: 576px) {
+  .subscription-form .form-group select {
+    max-width: 275px;
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: 992px) {
+  .subscription-form .form-group select {
     margin-right: 10px;
   }
 }
@@ -22081,7 +22110,7 @@
   letter-spacing: -0.9px;
 }
 
-.subscription-form .form-group button {
+.subscription-form .form-group input[type=submit] {
   border-radius: 3px;
   background-color: #fc593b;
   width: 100%;
@@ -22094,12 +22123,6 @@
   margin-top: 10px;
 }
 
-@media (min-width: 576px) {
-  .subscription-form .form-group button {
-    max-width: 209px;
-    margin-top: 0;
-  }
-}
 
 .subscription-form .form-text {
   color: #878b90;

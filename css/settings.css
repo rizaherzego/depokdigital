@@ -21731,13 +21731,17 @@ span {
           box-shadow: none;
 }
 
-button {
+.small-meta{
+  color: #fff;
+}
+
+input[type=submit] {
   cursor: pointer;
   background: transparent;
   border: none;
 }
 
-button:focus {
+input[type=submit]:focus {
   outline: none;
 }
 
@@ -21871,6 +21875,34 @@ input[type="number"] {
   letter-spacing: -1px;
   min-width: 137px;
 }
+
+input[type=submit] {
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+input[type=submit]:before {
+  content: '';
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
+  -webkit-transition: none;
+  transition: none;
+}
+
+input[type=submit]:hover:before {
+  width: 120%;
+  background-color: rgba(255, 255, 255, 0);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
 
 .btn--hover-shine {
   overflow: hidden;
